@@ -17,7 +17,8 @@ const addOne = (arr) => {
 
   });
   return newArray;
-};
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -33,7 +34,9 @@ const addExclamation = (arr) => {
   arr.forEach((params)=>{
     newArray.push(params+'!');
   });
-};
+
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -51,6 +54,7 @@ const allUpperCase = (arr) => {
     newArray.push(newElemnt);
   });
   return newArray;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -66,8 +70,6 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 const greeting = (word) => {
   // Solution code here..
   return word.toUpperCase()+'!';
-};
-
 const speaker = (words, callback) => {
   // Solution code here...
   let newWords =[];
@@ -76,7 +78,8 @@ const speaker = (words, callback) => {
     newWords.push(newElemnt);
   });
   return newWords;
-};
+
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
@@ -98,7 +101,7 @@ const addValues = (arr, value) => {
   // Solution code here...
   arr.push(value);
   return arr;
-};
+
 
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
@@ -107,6 +110,7 @@ const addNumbers = (num, arr, times, callback) => {
     callback(arr,num);
   }
   return arr;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
