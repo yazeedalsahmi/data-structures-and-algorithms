@@ -15,7 +15,6 @@ const addOne = (arr) => {
     newArray.push(element+1);
 
   });
-
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -66,7 +65,6 @@ const greeting = (word) => {
   // Solution code here...
   return word.toUpperCase+'!';
 };
-
 
 const speaker = (words, callback) => {
   // Solution code here...
