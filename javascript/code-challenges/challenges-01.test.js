@@ -17,6 +17,7 @@ const addOne = (arr) => {
 
   });
   return newArray;
+}
 
 
 
@@ -34,6 +35,7 @@ const addExclamation = (arr) => {
   arr.forEach((params)=>{
     newArray.push(params+'!');
   });
+};
 
 
 
@@ -78,6 +80,7 @@ const speaker = (words, callback) => {
     newWords.push(newElemnt);
   });
   return newWords;
+};
 
 
 
