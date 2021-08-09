@@ -80,12 +80,12 @@ For example, [ [0,2,5,4], [2,4,10], [] ] should return [ [1, 32], [1024], [] ].
 
 const divisibleByFiveTwoToThePower = (input) => {
   // Solution code here...
-  const newArray =[];
-  input.map((arr)=>{
+  const newArray = [];
+  input.map((arr) => {
     const arr2 = [];
-    arr.map((item)=>{
-      if(typeof item === 'number' && item % 5=== 0) {
-        arr2.push(Math.pow(2,item));
+    arr.map((item) => {
+      if (typeof item === 'number' && item % 5 === 0) {
+        arr2.push(Math.pow(2, item));
       }
     });
     newArray.push(arr2);
@@ -157,12 +157,12 @@ let starWarsData = [{
 
 let findMaleAndFemale = (data) => {
   // Solution code here...
-  const filterdObj = data.filter((item)=>{
-    if(item.gender === 'female'  || item.gender === 'male') {
+  const filterdObj = data.filter((item) => {
+    if (item.gender === 'female' || item.gender === 'male') {
       return true;
     }
   });
-  const mappedObj = filterdObj.map((item)=> item.name);
+  const mappedObj = filterdObj.map((item) => item.name);
   return mappedObj.join(' and ');
 };
 
@@ -174,7 +174,7 @@ Write a function named findShortest that, given the Star Wars data from Challeng
 
 let findShortest = (data) => {
   // Solution code here...
-  return data.reduce((res,item)=>{
+  return data.reduce((res, item) => {
     return res = Number(item.height) < Number(res.height) ? item : res;
 
   }).name;
